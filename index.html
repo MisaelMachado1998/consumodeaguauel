@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento de um Sistema Web para Visualização e Análise de Dados de Vazão de Caixas d'Água</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        h1 {
+            margin-bottom: 40px;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #28a745;
+            color: #fff;
+        }
+        caption {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .source {
+            font-style: italic;
+            font-size: 0.9em;
+            margin-top: -10px;
+        }
+        .content-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .content-wrapper img {
+            width: 800px;
+            height: 600px;
+            object-fit: cover;
+        }
+        /* Ajuste das imagens para caberem inteiras, abaixo da última tabela */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .image-container img {
+            width: 600px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Desenvolvimento de um Sistema Web para Visualização e Análise de Dados de Vazão de Caixas d'Água</h1>
+
+    <p>A presente página foi desenvolvida com o objetivo de demonstrar o consumo hídrico da Universidade, apresentando dados organizados em planilhas para facilitar a análise e a compreensão. Logo abaixo, encontram-se gráficos de autoria própria, que não apenas ilustram o histórico de consumo, mas também projetam tendências para os anos de 2025, 2026 e 2027. Essa abordagem visual permite identificar padrões e orientar tomadas de decisão mais conscientes e sustentáveis em relação ao uso dos recursos hídricos, reforçando a importância da gestão responsável no contexto universitário.</p>
+
+    <table>
+        <caption>Consumo de água da UEL nos anos 2022, 2023 e 2024</caption>
+        <thead>
+            <tr>
+                <th>Período</th>
+                <th>Volume consumido (m³)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Janeiro de 2022</td><td>25298</td></tr>
+            <tr><td>Fevereiro de 2022</td><td>33317</td></tr>
+            <tr><td>Março de 2022</td><td>44611</td></tr>
+            <tr><td>Abril de 2022</td><td>43859</td></tr>
+            <tr><td>Maio de 2022</td><td>30610</td></tr>
+            <tr><td>Junho de 2022</td><td>34578</td></tr>
+            <tr><td>Julho de 2022</td><td>68433</td></tr>
+            <tr><td>Agosto de 2022</td><td>24744</td></tr>
+            <tr><td>Setembro de 2022</td><td>23357</td></tr>
+            <tr><td>Outubro de 2022</td><td>27229</td></tr>
+            <tr><td>Novembro de 2022</td><td>21544</td></tr>
+            <tr><td>Dezembro de 2022</td><td>18242</td></tr>
+            <tr><td>Janeiro de 2023</td><td>15768</td></tr>
+            <tr><td>Fevereiro de 2023</td><td>17478</td></tr>
+            <tr><td>Março de 2023</td><td>16731</td></tr>
+            <tr><td>Abril de 2023</td><td>15705</td></tr>
+            <tr><td>Maio de 2023</td><td>20349</td></tr>
+            <tr><td>Junho de 2023</td><td>12117</td></tr>
+            <tr><td>Julho de 2023</td><td>13358</td></tr>
+            <tr><td>Agosto de 2023</td><td>11766</td></tr>
+            <tr><td>Setembro de 2023</td><td>14703</td></tr>
+            <tr><td>Outubro de 2023</td><td>14679</td></tr>
+            <tr><td>Novembro de 2023</td><td>13922</td></tr>
+            <tr><td>Dezembro de 2023</td><td>14838</td></tr>
+            <tr><td>Janeiro de 2024</td><td>11021</td></tr>
+            <tr><td>Fevereiro de 2024</td><td>13785</td></tr>
+            <tr><td>Março de 2024</td><td>16021</td></tr>
+            <tr><td>Abril de 2024</td><td>15322</td></tr>
+            <tr><td>Maio de 2024</td><td>16743</td></tr>
+            <tr><td>Junho de 2024</td><td>14179</td></tr>
+            <tr><td>Julho de 2024</td><td>17998</td></tr>
+            <tr><td>Agosto de 2024</td><td>18228</td></tr>
+        </tbody>
+    </table>
+    <p class="source">Fonte: Prefeitura do Campus UEL (2024).</p>
+
+    <table>
+        <caption>Leitura do Hidrômetro (Valores Acumulados)</caption>
+        <thead>
+            <tr>
+                <th>Id do Intervalo</th>
+                <th>Data da Leitura</th>
+                <th>Consumo no Período (m³)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>0</td><td>15/03/2024</td><td></td></tr>
+            <tr><td>1</td><td>01/04/2024</td><td>70.65</td></tr>
+            <tr><td>2</td><td>15/04/2024</td><td>73.87</td></tr>
+            <tr><td>3</td><td>30/04/2024</td><td>91.5</td></tr>
+            <tr><td>4</td><td>16/05/2024</td><td>81.81</td></tr>
+            <tr><td>5</td><td>21/06/2024</td><td>87.91</td></tr>
+            <tr><td>6</td><td>02/07/2024</td><td>79.16</td></tr>
+            <tr><td>7</td><td>16/07/202td><td>87.73</td></tr>
+            <tr><td>8</td><td>30/07/2024</td><td>89.68</td></tr>
+            <tr><td>9</td><td>13/08/2024</td><td>91.9</td></tr>
+            <tr><td>10</td><td>27/08/2024</td><td>108.94</td></tr>
+            <tr><td>11</td><td>10/09/2024</td><td>106.25</td></tr>
+            <tr><td>12</td><td>24/09/2024</td><td>86.25</td></tr>
+            <tr><td>13</td><td>08/10/2024</td><td>74.64</td></tr>
+            <tr><td>14</td><td>22/10/2024</td><td>75.57</td></tr>
+            <tr><td>15</td><td>05/11/2024</td><td>86.99</td></tr>
+        </tbody>
+    </table>
+   
